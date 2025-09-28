@@ -28,7 +28,7 @@ jobs:
         run: flake8 .
 
       - name: Run Tests
-        run: pytest
+        run: pytest -q --tb=short
 
       - name: Run Bandit Security Scan
         run: bandit -r .
