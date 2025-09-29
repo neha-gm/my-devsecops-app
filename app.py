@@ -9,4 +9,5 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Safe for production (no debug=True)
+    app.run()
