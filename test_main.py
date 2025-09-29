@@ -1,7 +1,6 @@
-
-
 from main import greet
 
 
 def test_greet():
-    assert greet("Neha") == "Hello, Neha!"
+    # Bandit flagged assert, but it's safe in pytest tests
+    assert greet("Neha") == "Hello, Neha!"  # nosec
